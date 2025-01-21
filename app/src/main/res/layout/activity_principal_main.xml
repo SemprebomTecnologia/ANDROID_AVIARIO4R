@@ -26,7 +26,7 @@
         android:id="@+id/btn_CHEGADA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CHEGADA"
+        android:text="LOTE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_MORTOS"
         app:layout_constraintHorizontal_bias="0.5"
@@ -46,13 +46,5 @@
         app:layout_constraintStart_toEndOf="@+id/btn_CHEGADA"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.5" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="213dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

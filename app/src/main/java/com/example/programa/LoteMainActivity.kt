@@ -30,13 +30,18 @@ class LoteMainActivity : AppCompatActivity() {
             insets
         }*/
 
+
+
         //programo o evento do botao
-        MainColeta.btnINICIO.setOnClickListener(){
+
+        MainColeta.btnPRINCIPAL.setOnClickListener(){
             //INFORMO A TELA
             val MudarTela = Intent(this,PrincipalMainActivity::class.java)
             //MOSTRO A TELA
             startActivity(MudarTela)
 
         }
+
+
     }
 }

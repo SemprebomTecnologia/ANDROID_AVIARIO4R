@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" />
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="AVIARIO 4R - LOTE CHEGADA"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtNomeLote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DADOS DO LOTE"
+        android:textAlignment="viewStart"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edtNomeLote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DESCRIÇÃO DO LOTE"
+        android:inputType="text"
+        android:maxLength="20"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeLote"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/txtDataEntradaLote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DATA E HORA DE ENTRADA DO LOTE"
+        android:textAlignment="viewStart"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeLote"
+        tools:layout_editor_absoluteX="47dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date|datetime"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtDataEntradaLote"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtDescricaoLote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DETALHES DO LOTE"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <EditText
+        android:id="@+id/edtDetalheLote"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLength="50"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoLote"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btn_SALVAR"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/btn_true"
+        android:text="SALVAR"
+        app:layout_constraintEnd_toStartOf="@+id/btn_LIMPAR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDetalheLote" />
+
+    <Button
+        android:id="@+id/btn_LIMPAR"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/btn_cancel"
+        android:text="LIMPAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_SALVAR"
+        app:layout_constraintTop_toBottomOf="@+id/edtDetalheLote" />
+
+    <Button
+        android:id="@+id/btn_PRINCIPAL"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="RETORNAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDetalheLote" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

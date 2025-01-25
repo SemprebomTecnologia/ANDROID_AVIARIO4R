@@ -1,6 +1,6 @@
 package com.example.programa
 
-import android.R
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View.OnFocusChangeListener
@@ -16,8 +16,8 @@ import com.example.programa.DateTime
 
 class LoteMainActivity : AppCompatActivity() {
 
-    private  lateinit  var MainPrincipal  : ActivityPrincipalMainBinding
-    private  lateinit  var MainLote     : ActivityLoteMainBinding
+    private  lateinit  var MainPrincipal    : ActivityPrincipalMainBinding
+    private  lateinit  var MainLote         : ActivityLoteMainBinding
 
     //public  lateinit  var MainPrincipal  : ActivityPrincipalMainBinding
     //private lateinit  var MainColeta     : ActivityColetaMainBinding
@@ -31,10 +31,8 @@ class LoteMainActivity : AppCompatActivity() {
         //inflo o layout
         setContentView(MainLote.root)
 
-        var LoteDateTime  = findViewById<EditText>(R.id.editTextDate)
-
-
-
+        //val EdtProd = findViewById<EditText>(R.id.EdtProdutoLista)
+        //var ProdutoLista: String = EdtProd.toString()
 
         /*
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -43,11 +41,13 @@ class LoteMainActivity : AppCompatActivity() {
             insets
         }*/
 
-        MainLote.LoteDateTime.setOnFocusChangeListener(){
-                var txt : String = LoteDateTime.text.toString()
+
+        MainLote.btnLIMPAR.setOnClickListener(){
+            var DataLote = MainLote.editTextDate.text.toString()
+            MainLote.txtTitulo.text = DataLote.toString()
+
 
         }
-
 
 
 

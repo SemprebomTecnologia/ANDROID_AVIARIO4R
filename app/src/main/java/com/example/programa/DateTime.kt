@@ -17,26 +17,6 @@ class DateTime(){
     lateinit var Calendario          : Calendar
     lateinit var SimplesDataFormato  : SimpleDateFormat
 
-    //obtem a data do sistema
-    //  System.currentTimeMillis()
-
-    //funcao para obter a hora  data atual do systema
-    fun Dia( txt: String ): Date {
-
-        Data  = DateFormat().format("dd.MM.yyyy")
-
-            simpleDateFormat.format(txt).toString()
-    }
-
-
-
-
-   // val dateTimeInLongTextView.text = datesysval.toString()
-
-
-
-
-
 
 }
 
